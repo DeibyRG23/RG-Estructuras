@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RG Estructuras | Ornamentación y estructuras metálicas en Bucaramanga</title>
+    <meta name="description" content="Diseñamos, fabricamos y montamos portones, techos, ventanas, puertas, escaleras y estructuras metálicas a medida en Bucaramanga y su área metropolitana.">
+    <meta name="theme-color" content="#14171c">
+
+    <!-- Open Graph (vista previa al compartir por WhatsApp / redes) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RG Estructuras | Ornamentación y estructuras metálicas">
+    <meta property="og:description" content="Diseño, fabricación y montaje de soluciones en metal a tu medida.">
+    <meta property="og:image" content="assets/header.png">
+
+    <link rel="icon" href="assets/logo.png">
+
+    <!-- Fuentes: se cargan con <link> (más rápido que @import en el CSS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- ========== NAVEGACIÓN ========== -->
+    <header class="site-header">
+        <nav class="nav wrap" aria-label="Principal">
+            <a class="nav__logo" href="#inicio">
+                <img src="assets/logo.png" alt="" width="56" height="56">
+                <span>RG Estructuras</span>
+            </a>
+
+            <button class="nav__toggle" id="menu-btn" type="button"
+                    aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+                <i class="ri-menu-line" aria-hidden="true"></i>
+            </button>
+
+            <ul class="nav__links" id="nav-links">
+                <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+
+        <!-- ========== HERO ========== -->
+        <section class="hero surface-dark" id="inicio">
+            <div class="hero__inner wrap">
+                <div class="hero__content">
+                    <h1>Construye tus ideas con nosotros</h1>
+
+                    <p class="hero__lead">
+                        Diseñamos, fabricamos y montamos soluciones en metal pensadas para tu hogar,
+                        negocio o proyecto. Convertimos tus ideas en trabajos resistentes,
+                        funcionales y hechos a tu medida.
+                    </p>
+
+                    <ul class="hero__steps" aria-label="Lo que hacemos">
+                        <li>Diseño</li>
+                        <li>Fabricación</li>
+                        <li>Montaje</li>
+                    </ul>
+
+                    <div class="hero__actions">
+                        <a class="btn btn--primary" href="#contacto">Pedir cotización</a>
+                        <a class="btn btn--ghost" href="#proyectos">Ver proyectos</a>
+                    </div>
+                </div>
+
+                <div class="hero__media">
+                    <img src="assets/header.png" alt="Soldador de RG Estructuras trabajando una pieza metálica"
+                         fetchpriority="high">
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== QUIÉNES SOMOS ========== -->
+        <section class="section section--plate" id="quienes-somos">
+            <div class="somos wrap">
+                <div class="somos__text">
+                    <h2 class="section-title">¿Quiénes somos?</h2>
+
+                    <p>
+                        En <strong>RG Estructuras</strong> nos dedicamos al diseño, fabricación e instalación
+                        de estructuras metálicas y trabajos de ornamentación.
+                    </p>
+                    <p>
+                        Trabajamos cada proyecto buscando combinar <strong>resistencia, funcionalidad y
+                        buenos acabados</strong>, con soluciones adaptadas a las necesidades y medidas de cada cliente.
+                    </p>
+                    <p>
+                        Desde una puerta o ventana hasta techos, escaleras, canales y estructuras metálicas,
+                        ponemos nuestra experiencia y dedicación en cada trabajo.
+                    </p>
+
+                    <ul class="checklist">
+                        <li><i class="ri-checkbox-circle-fill" aria-hidden="true"></i> Trabajos hechos a medida</li>
+                        <li><i class="ri-checkbox-circle-fill" aria-hidden="true"></i> Materiales y acabados de calidad</li>
+                        <li><i class="ri-checkbox-circle-fill" aria-hidden="true"></i> Atención personalizada</li>
+                        <li><i class="ri-checkbox-circle-fill" aria-hidden="true"></i> Cumplimiento y responsabilidad</li>
+                        <li><i class="ri-checkbox-circle-fill" aria-hidden="true"></i> Soluciones resistentes y funcionales</li>
+                    </ul>
+                </div>
+
+                <!-- Carrusel propio (sin Bootstrap) -->
+                <div class="carousel" id="carousel" role="group" aria-roledescription="carrusel"
+                     aria-label="Trabajos realizados">
+                    <div class="carousel__track">
+                        <figure class="carousel__slide is-active">
+                            <img src="assets/qs/1.jpg" alt="Obra de RG Estructuras (1 de 3)" loading="lazy" decoding="async">
+                        </figure>
+                        <figure class="carousel__slide">
+                            <img src="assets/qs/2.jpg" alt="Obra de RG Estructuras (2 de 3)" loading="lazy" decoding="async">
+                        </figure>
+                        <figure class="carousel__slide">
+                            <img src="assets/qs/3.jpg" alt="Obra de RG Estructuras (3 de 3)" loading="lazy" decoding="async">
+                        </figure>
+                    </div>
+
+                    <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Imagen anterior">
+                        <i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                    </button>
+                    <button class="carousel__btn carousel__btn--next" type="button" aria-label="Imagen siguiente">
+                        <i class="ri-arrow-right-s-line" aria-hidden="true"></i>
+                    </button>
+                    <div class="carousel__dots" id="carousel-dots"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SERVICIOS ========== -->
+        <section class="section surface-dark" id="servicios">
+            <div class="wrap">
+                <header class="section-head">
+                    <h2 class="section-title">Nuestros servicios</h2>
+                    <p>Diseñamos, fabricamos e instalamos soluciones metálicas a la medida de cada espacio.</p>
+                </header>
+
+                <div class="servicios-grid">
+                    <article class="servicio">
+                        <img src="assets/servicios/porton y puerta.jpg" alt="Portón y puerta metálica fabricado por RG Estructuras"
+                             loading="lazy" decoding="async">
+                        <div class="servicio__body">
+                            <h3>Portones a medida</h3>
+                            <p>Fabricamos portones metálicos personalizados que combinan seguridad, resistencia y diseño. Nos adaptamos a las dimensiones y necesidades de cada espacio, cuidando cada detalle para ofrecer acabados de calidad y soluciones duraderas para tu hogar, negocio o propiedad.</p>
+                        </div>
+                    </article>
+
+                    <article class="servicio">
+                        <img src="assets/servicios/encerramientos.jpg" alt="Encerramiento de rejas metalicas"
+                             loading="lazy" decoding="async">
+                        <div class="servicio__body">
+                            <h3>Rejas a medida</h3>
+                            <p>Fabricamos e instalamos cerramientos con rejas metálicas a medida, ideales para brindar seguridad, protección y delimitación de espacios. Diseñamos soluciones adaptadas a las necesidades de cada propiedad, combinando resistencia, funcionalidad y acabados de calidad.</p>
+                        </div>
+                    </article>
+
+                    <article class="servicio">
+                        <img src="assets/servicios/ventanas.jpg" alt="Ventanas y cerramientos metálicos"
+                             loading="lazy" decoding="async">
+                        <div class="servicio__body">
+                            <h3>Ventanas metálicas a medida</h3>
+                            <p>¡Dale a tus espacios el acabado que estás buscando! 🏡 En RG Estructuras fabricamos ventanas metálicas personalizadas que se adaptan al estilo de tu hogar o negocio. Te ayudamos a elegir un diseño que combine estética, funcionalidad y resistencia, cuidando cada detalle para que el resultado sea justo lo que imaginas.</p>
+                        </div>
+                    </article>
+
+                    <article class="servicio">
+                        <img src="assets/servicios/puerta.jpg" alt="Puerta metálica"
+                             loading="lazy" decoding="async">
+                        <div class="servicio__body">
+                            <h3>Puertas metálicas y cerraduras digitales</h3>
+                            <p>🚪 ¡Dale a tu hogar o negocio la seguridad y el estilo que merece! En RG Estructuras fabricamos puertas metálicas a medida e instalamos chapas digitales para brindarte soluciones que combinan diseño, protección y comodidad. Personalizamos cada proyecto según tus necesidades, desde una puerta resistente hasta un acceso moderno con tecnología de seguridad.</p>
+                        </div>
+                    </article>
+
+                    <article class="servicio">
+                        <img src="assets/servicios/pasamanos.jpg" alt="Escalera con pasamanos metálico"
+                             loading="lazy" decoding="async">
+                        <div class="servicio__body">
+                            <h3>Escaleras y pasamanos metálicos</h3>
+                            <p>🏗️ ¡Aprovecha cada espacio con diseños que combinan seguridad y estilo! En RG Estructuras fabricamos escaleras y pasamanos a medida, pensados para adaptarse a tu espacio y darle un acabado especial. Ya sea para tu hogar, negocio o proyecto de construcción, te ayudamos a encontrar una solución práctica, resistente y acorde con lo que necesitas.</p>
+                        </div>
+                    </article>
+
+                    <article class="servicio">
+                        <img src="assets/servicios/estructuras.jpg" alt="Estructura metálica a medida"
+                             loading="lazy" decoding="async">
+                        <div class="servicio__body">
+                            <h3>Estructuras metálicas</h3>
+                            <p>🏗️ ¡Dale forma a tu próximo proyecto con estructuras hechas para durar! En RG Estructuras te acompañamos desde tu idea inicial hasta la solución que necesitas. Fabricamos estructuras metálicas para diferentes espacios y aplicaciones, adaptándonos a las medidas y requerimientos de cada obra, con atención al detalle y compromiso en cada trabajo.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PROYECTOS ========== -->
+        <section class="section section--plate" id="proyectos">
+            <div class="wrap">
+                <header class="section-head">
+                    <h2 class="section-title">Proyectos destacados</h2>
+                    <p>Algunos de los trabajos realizados por RG Estructuras, desarrollados a medida según las necesidades de cada cliente.</p>
+                </header>
+
+                <div class="proyectos-grid">
+                    <article class="proyecto">
+                        <img src="assets/proyectos/picoteo.jpg" alt="proyecto picoteo"
+                             loading="lazy" decoding="async">
+                        <div class="proyecto__info">
+                            <span class="proyecto__tag">Techo y portones</span>
+                            <h3>Proyecto parqueadero restaurante picoteo</h3>
+                            <p>Pórton instalado cerca de 10 metros de porton, instalación de venta y puerta para kiosco a la entrada, cambio de techos y canales alrededor de mas de 50 metros de largo por 6 de ancho de techo.</p>
+                        </div>
+                    </article>
+
+                    <article class="proyecto">
+                        <img src="assets/proyectos/techo.jpg" alt="techo vereda"
+                             loading="lazy" decoding="async">
+                        <div class="proyecto__info">
+                            <span class="proyecto__tag">Techo</span>
+                            <h3>Proyecto de techo alrededor de casa</h3>
+                            <p>Fabricación y montaje de estructura de techo en casa alrededor de 20 metros por 4 de ancho de techo para reguardar de la lluvia el inmueble.</p>
+                        </div>
+                    </article>
+
+                    <article class="proyecto">
+                        <img src="assets/proyectos/techoyporton.jpg" alt="techo y porton para almacen"
+                             loading="lazy" decoding="async">
+                        <div class="proyecto__info">
+                            <span class="proyecto__tag">Techo y porton</span>
+                            <h3>Proyecto de techo y porton para almacen</h3>
+                            <p>Fabricación e instalación de techo y porton para almacen, instalando y techando con teja de buena calidad alrededor de 28 metros de largo por 8 metros de ancho.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTACTO ========== -->
+        <section class="section surface-dark" id="contacto">
+            <div class="contacto wrap">
+                <div class="contacto__intro">
+                    <h2 class="section-title">Hablemos de tu proyecto</h2>
+                    <p>
+                        ¿Tienes un proyecto en mente? Cuéntanos qué necesitas y te ayudamos a
+                        encontrar la mejor solución, con medidas y acabados a tu gusto.
+                    </p>
+                    <a class="btn btn--primary" href="https://wa.me/573000000000?text=Hola%2C%20quiero%20cotizar%20un%20trabajo%20en%20metal"
+                       target="_blank" rel="noopener">
+                        <i class="ri-whatsapp-line" aria-hidden="true"></i> Escribir por WhatsApp
+                    </a>
+                </div>
+
+                <ul class="contact-list">
+                    <li>
+                        <i class="ri-whatsapp-line" aria-hidden="true"></i>
+                        <div>
+                            <span>WhatsApp</span>
+                            <a href="https://wa.me/573138720558" target="_blank" rel="noopener">3138720558</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ri-phone-line" aria-hidden="true"></i>
+                        <div>
+                            <span>Teléfono</span>
+                            <a href="tel:+573138720558">313 8720558</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ri-mail-line" aria-hidden="true"></i>
+                        <div>
+                            <span>Correo electrónico</span>
+                            <a href="mailto:contacto@rgestructuras.com">3138720558</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ri-map-pin-line" aria-hidden="true"></i>
+                        <div>
+                            <span>Ubicación</span>
+                            <p>Floridablanca y area metropolitana</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="wrap site-footer__inner">
+            <p>© 2026 <strong>Design Mecasoft</strong>. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a class="wa-float" href="https://wa.me/573138720558" target="_blank" rel="noopener"
+       aria-label="Escribir por WhatsApp">
+        <i class="ri-whatsapp-line" aria-hidden="true"></i>
+    </a>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
